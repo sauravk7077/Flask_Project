@@ -22,15 +22,15 @@
                 </div>
                 <div class="form-group">
                     {{ form.email.label(class='form-control_label') }}
-                    {% if form.username.errors%}
-                        {{ form.username(class='form-control form-control-lg is-invalid') }}
+                    {% if form.email.errors%}
+                        {{ form.email(class='form-control form-control-lg is-invalid') }}
                         <div class="invalid-feedback">
-                            {% for error in form.username.errors %}
+                            {% for error in form.email.errors %}
                                 <span>{{error}}</span>
                             {% endfor %}
                         </div>
                     {% else %}
-                        {{ form.username(class='form-control form-control-lg') }}
+                        {{ form.email(class='form-control form-control-lg') }}
                     {% endif %}
                 </div>
                 <div class="form-group">
@@ -67,7 +67,7 @@
     </div>
     <div class="border-top pt-3">
         <small class="text-muted">
-            Already have a account <a class="ml-2" href="{{url_for('login_page')}}">Sign in</a>
+            Already have a account <a class="ml-2" href="{{url_for('login_page')}}">Log in</a>
         </small>
     </div>
 {% endblock %}
