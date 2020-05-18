@@ -2,3 +2,11 @@
 .env
 requirements.txt
 __pycache__
+mypy*
+typed_ast*
+typing_extension*
+56fa58acf89604978a41__mypyc.cp38-win_amd64.pyd
+dmypy.exe
+.mypy_cache
+stubgen.exe
+stubtest.exe
